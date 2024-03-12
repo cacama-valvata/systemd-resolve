@@ -1,0 +1,8 @@
+[Unit]
+Description=Network Name Resolution
+
+[Service]
+ExecStart=!/lib/systemd/systemd-resolve
+
+[Install]
+WantedBy=multi-user.target
